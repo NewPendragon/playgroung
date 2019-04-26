@@ -10,18 +10,25 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { PlaygroundComponent } from './pages/playground/playground.component';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { Box1Component } from './components/box1/box1.component';
+import { Box2Component } from './components/box2/box2.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PlaygroundComponent
+    PlaygroundComponent,
+    Box1Component,
+    Box2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
-  ],  
+    MaterialModule,
+    FlexLayoutModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

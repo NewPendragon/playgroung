@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { PlaygroundComponent } from './pages/playground/playground.component'
+import { PlaygroundComponent } from './pages/playground/playground.component';
 
 const routes: Routes = [
   {
@@ -14,9 +14,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'ground',
+    path: 'playground',
     component: PlaygroundComponent,
-    data: { title: 'Ground' }
+    data: { title: 'Playground' }
   },
   { path: '**', component: HomeComponent }
 ];

@@ -1,12 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<mat-toolbar color="primary">
+<div fxFlex fxLayout="column" fxLayoutGap="10px" style="height: 100vh">
+  <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>Custom Toolbar</span>
       <span class="example-spacer"></span>
       <mat-icon>home</mat-icon>
     </mat-toolbar-row>
-</mat-toolbar>
-  
-<router-outlet></router-outlet>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+
+  <!--
+  <div fxLayout="row wrap">
+    <router-outlet></router-outlet>
+  </div>
+  -->
+
+</div>
